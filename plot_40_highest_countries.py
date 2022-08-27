@@ -2,6 +2,8 @@ import requests
 import json
 import pandas as pd
 import seaborn as sns
+import numpy as np
+import matplotlib.pylot as plt
 
 api_url = 'https://api.covid19api.com/summary'
 cov_sum = requests.get(api_url)
