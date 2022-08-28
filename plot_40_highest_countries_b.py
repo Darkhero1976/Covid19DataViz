@@ -6,6 +6,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+api_url = 'https://api.covid19api.com/summary'
 cov_sum = requests.get(api_url)
 cov_sum_as_json = cov_sum.json()
 countries = cov_sum_as_json.get('Countries')
